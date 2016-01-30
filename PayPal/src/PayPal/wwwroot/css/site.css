@@ -1,0 +1,257 @@
+﻿html{
+  position:relative; 
+  min-height:100%;
+}
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: url("../images/0ApprovedRainbowDNABlack.jpg");
+    background-position:center;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    font-weight: bold;
+    margin-bottom: 70px;
+    margin-top: 100px;
+    font-family:Georgia, 'Times New Roman', Times, serif;  
+    min-height: 100%;
+    background-color:black;
+    height:100% !important;
+    font-weight: bold;
+    color: white;
+}
+select {
+    padding:3px;
+    margin: 0;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    background: white;
+    border:0;
+    outline:0;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    cursor:pointer;
+    width: 100%;
+}
+h1{
+    font-size:60px;
+    color:yellow;
+}
+h2{
+    font-size:52px;
+    color:yellow;
+}
+h3{
+    font-size:46px;
+    color:yellow;
+}
+h4{
+    font-size:40px;
+    color:yellow;
+}
+h5{
+    font-size:36px;
+    color:yellow;
+}
+.aquamarine{
+    color:aquamarine;
+}
+.yellow{
+    color:yellow;
+}
+.blue{
+    color:blue;
+}
+.white{
+    color:white;
+}
+.gray{
+    color:gray;
+}
+.darkgray{
+    color:darkgray
+}
+.darkgreen{
+    color:darkgreen;
+}
+.green{
+    color:green;
+}
+.lightgreen{
+    color:lightgreen;
+}
+.black{
+    color:black;
+}
+.red{
+    color:red;
+}
+.purple{
+    color:purple;
+}
+.darkpurple{
+    color:rebeccapurple;
+}
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.navbar {
+    color:black;
+    background-color:#CCCCCC;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border-bottom:10px ridge;
+}
+.nav.navbar-nav.nav li a {
+    color:black;
+    font-weight: bold;
+}
+.nav.navbar-nav.nav li a:hover {
+    color:dodgerblue;
+    background-color:#CCCCCC;
+    font-weight: bold;
+}
+.navbar-header.nav a{
+    color:black;
+    font-weight: bold;
+}
+.navbar-brand{
+    color:black;
+    background-color:#CCCCCC;
+    font-weight: bold;
+}
+.navbar-brand:hover{
+    color:dodgerblue;
+    background-color:#CCCCCC;
+    font-weight: bold;
+}
+.navbar-toggle {
+    color:black;
+    background-color:#CCCCCC;
+    font-weight: bold;
+}
+.navbar-toggle:hover{
+    color:dodgerblue;
+    background-color:#CCCCCC;
+    font-weight: bold;
+}
+.dropdown-submenu:hover > a:after {
+    color:dodgerblue;
+    background-color:#CCCCCC;
+    font-weight: bold;
+}
+.nav.navbar-nav {
+    color:black;
+    background-color:#CCCCCC;
+    font-weight: bold;
+}
+.navbar-header{
+    color:black;
+    background-color:#CCCCCC;
+    font-weight: bold;
+}
+navbar-header{
+    color:black;
+    background-color:#CCCCCC;
+    font-weight: bold;
+}
+navbar-brand{
+    color:black;
+    background-color:#CCCCCC;
+    font-weight: bold;
+}
+.dropdown{
+    color:black;
+    background-color:#CCCCCC;
+    font-weight: bold;
+}
+.dropdown-menu{
+    color:black;
+    background-color:#CCCCCC;
+    border:10px ridge; 
+    border-top:9px ridge;
+    font-weight: bold;
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
+    background-color:#CCCCCC;
+}
+@media screen and (min-width: 768px){
+    .navbar-collapse.collapse.uncollapse-hidden{
+        display: none!important;
+    }
+}
+.navbar-default .navbar-brand {
+    background-color:#CCCCCC;
+    color:black;
+    font-weight: bold;
+}
+.navbar li:hover, a:hover {
+    background-color:#CCCCCC;
+    color:dodgerblue;
+    font-weight: bold;
+} 
+.navbar li ul li {
+    background-color:#CCCCCC;
+    color:black;
+    font-weight: bold;
+} 
+.navbar li ul li a:hover {
+    background-color:#CCCCCC;
+    color:dodgerblue;
+    font-weight: bold;
+}
+div.transbox {
+    /*rgba(0,0,0,0.74) for background-color for black opacity*/
+    /*24px solid black for black lines*/
+    background-color: rgba(0,0,0,0.74);
+    border: none;
+    border-bottom:none;
+    border-top:24px solid black;
+    height:100% !important;
+    font-weight: bolder;
+    color:springgreen;
+    padding-right:35px;
+    padding-left:35px;
+    
+}
+body, html, .container, .body-content {
+    height:100%;
+}
+p{
+    font-size:18px;
+}
+a{
+    background-color:inherit !important;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-top: 7px;
+    color:black;
+    background-color:#CCCCCC;
+    text-align: center;
+    font-weight: bold;
+    border-top:8px groove;
+    /*option 1 for border (7px solid blueviolet)*/
+    /*option 2 for border (9px ridge)*/
+}
+.grid-item { width: 200px; }
+.grid-item--width2 { width: 400px; }
+p{
+    color:royalblue !important;
+}

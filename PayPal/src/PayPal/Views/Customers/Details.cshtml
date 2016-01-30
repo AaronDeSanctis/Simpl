@@ -1,0 +1,55 @@
+@model PayPal.Models.FinanceModel.Customer
+
+@{
+    ViewData["Title"] = "Details";
+}
+<div class="transbox">
+    <h2>Details</h2>
+
+    <div>
+        <h4>Customer</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.AmountSpent)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.AmountSpent)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.AverageReturnValue)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.AverageReturnValue)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.IsRegularCustomer)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.IsRegularCustomer)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.PurchaseDate)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.PurchaseDate)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.RespondsToUpselling)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.RespondsToUpselling)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.SatisfactionPercent)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.SatisfactionPercent)
+            </dd>
+        </dl>
+    </div>
+    <p>
+        <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+        <a asp-action="Index">Back to List</a>
+    </p>
+</div>

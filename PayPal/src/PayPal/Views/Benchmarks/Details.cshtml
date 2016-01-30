@@ -1,0 +1,37 @@
+@model PayPal.Models.FinanceModel.Benchmark
+
+@{
+    ViewData["Title"] = "Details";
+}
+<div class="transbox">
+    <h2>Details</h2>
+
+    <div>
+        <h4>Benchmark</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.CompletionPercent)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.CompletionPercent)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.IsComplete)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.IsComplete)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.ShortTermGoal)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ShortTermGoal)
+            </dd>
+        </dl>
+    </div>
+    <p>
+        <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+        <a asp-action="Index">Back to List</a>
+    </p>
+</div>

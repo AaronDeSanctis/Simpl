@@ -1,0 +1,37 @@
+@model PayPal.Models.PeopleModel.Role
+
+@{
+    ViewData["Title"] = "Details";
+}
+<div class="transbox">
+    <h2>Details</h2>
+
+    <div>
+        <h4>Role</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.DefaultHourlyWage)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.DefaultHourlyWage)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.DefaultSalary)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.DefaultSalary)
+            </dd>
+        </dl>
+    </div>
+    <p>
+        <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+        <a asp-action="Index">Back to List</a>
+    </p>
+</div>

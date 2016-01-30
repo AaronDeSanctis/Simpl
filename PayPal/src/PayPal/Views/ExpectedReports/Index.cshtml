@@ -1,0 +1,52 @@
+@model IEnumerable<PayPal.Models.FinanceModel.ExpectedReport>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="transbox">
+    <h2>Expected Reports</h2>
+
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EstimatedCustomerAmount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsGain)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Return)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EstimatedCustomerAmount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsGain)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Return)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </table>
+</div>

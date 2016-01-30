@@ -1,0 +1,55 @@
+@model PayPal.Models.FinanceModel.Goal
+
+@{
+    ViewData["Title"] = "Details";
+}
+<div class="transbox">
+    <h2>Details</h2>
+
+    <div>
+        <h4>Goal</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.CompletionPercent)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.CompletionPercent)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.ExpectedCareerLength)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ExpectedCareerLength)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.ExpectedTotalDaily)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ExpectedTotalDaily)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.RealisticTotalDaily)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.RealisticTotalDaily)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.YearlyGoalIncome)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.YearlyGoalIncome)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.YearlyIncome)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.YearlyIncome)
+            </dd>
+        </dl>
+    </div>
+    <p>
+        <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+        <a asp-action="Index">Back to List</a>
+    </p>
+</div>

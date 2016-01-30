@@ -1,0 +1,74 @@
+@model PayPal.Models.FinanceModel.Customer
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<div class="transbox">
+    <h2>Edit</h2>
+
+    <form asp-action="Edit">
+        <div class="form-horizontal">
+            <h4>Customer</h4>
+            <hr />
+            <div asp-validation-summary="ValidationSummary.ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="AmountSpent" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="AmountSpent" class="form-control" />
+                    <span asp-validation-for="AmountSpent" class="text-danger" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="AverageReturnValue" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="AverageReturnValue" class="form-control" />
+                    <span asp-validation-for="AverageReturnValue" class="text-danger" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="IsRegularCustomer" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="IsRegularCustomer" class="form-control" />
+                    <span asp-validation-for="IsRegularCustomer" class="text-danger" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="PurchaseDate" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="PurchaseDate" class="form-control" />
+                    <span asp-validation-for="PurchaseDate" class="text-danger" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="RespondsToUpselling" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="RespondsToUpselling" class="form-control" />
+                    <span asp-validation-for="RespondsToUpselling" class="text-danger" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="SatisfactionPercent" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="SatisfactionPercent" class="form-control" />
+                    <span asp-validation-for="SatisfactionPercent" class="text-danger" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Save" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+    @section Scripts {
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    }
+</div>

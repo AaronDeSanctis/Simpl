@@ -1,0 +1,74 @@
+@model PayPal.Models.FinanceModel.Benchmark
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<div class="transbox">
+    <h2>Edit</h2>
+
+    <form asp-action="Edit">
+        <div class="form-horizontal">
+            <h4>Benchmark</h4>
+            <hr />
+            <div asp-validation-summary="ValidationSummary.ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="ActualReportId" class="control-label col-md-2">ActualReportId</label>
+                <div class="col-md-10">
+                    <select asp-for="ActualReportId" class="form-control" />
+                    <span asp-validation-for="ActualReportId" class="text-danger" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="BenchmarkContainerId" class="control-label col-md-2">BenchmarkContainerId</label>
+                <div class="col-md-10">
+                    <select asp-for="BenchmarkContainerId" class="form-control" />
+                    <span asp-validation-for="BenchmarkContainerId" class="text-danger" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="CompletionPercent" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="CompletionPercent" class="form-control" />
+                    <span asp-validation-for="CompletionPercent" class="text-danger" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="ExpectedReportId" class="control-label col-md-2">ExpectedReportId</label>
+                <div class="col-md-10">
+                    <select asp-for="ExpectedReportId" class="form-control" />
+                    <span asp-validation-for="ExpectedReportId" class="text-danger" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="IsComplete" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="IsComplete" class="form-control" />
+                    <span asp-validation-for="IsComplete" class="text-danger" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="ShortTermGoal" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="ShortTermGoal" class="form-control" />
+                    <span asp-validation-for="ShortTermGoal" class="text-danger" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Save" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+    @section Scripts {
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    }
+</div>

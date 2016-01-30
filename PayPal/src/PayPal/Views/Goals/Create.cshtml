@@ -1,0 +1,79 @@
+@model PayPal.Models.FinanceModel.Goal
+
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="transbox">
+    <h2>Create</h2>
+
+    <form asp-action="Create">
+        <div class="form-horizontal">
+            <h4>Goal</h4>
+            <hr />
+            <div asp-validation-summary="ValidationSummary.ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="BenchmarkContainerId" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <select asp-for="BenchmarkContainerId" class="form-control"></select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="CompletionPercent" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="CompletionPercent" class="form-control" />
+                    <span asp-validation-for="CompletionPercent" class="text-danger" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="ExpectedCareerLength" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="ExpectedCareerLength" class="form-control" />
+                    <span asp-validation-for="ExpectedCareerLength" class="text-danger" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="ExpectedTotalDaily" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="ExpectedTotalDaily" class="form-control" />
+                    <span asp-validation-for="ExpectedTotalDaily" class="text-danger" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="RealisticTotalDaily" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="RealisticTotalDaily" class="form-control" />
+                    <span asp-validation-for="RealisticTotalDaily" class="text-danger" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="YearlyGoalIncome" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="YearlyGoalIncome" class="form-control" />
+                    <span asp-validation-for="YearlyGoalIncome" class="text-danger" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="YearlyIncome" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="YearlyIncome" class="form-control" />
+                    <span asp-validation-for="YearlyIncome" class="text-danger" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Create" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+    @section Scripts {
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    }
+</div>

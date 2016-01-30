@@ -1,0 +1,59 @@
+@model PayPal.Models.FinanceModel.Customer
+
+@{
+    ViewData["Title"] = "Delete";
+}
+<div class="transbox">
+    <h2>Delete</h2>
+
+    <h3>Are you sure you want to delete this?</h3>
+    <div>
+        <h4>Customer</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.AmountSpent)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.AmountSpent)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.AverageReturnValue)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.AverageReturnValue)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.IsRegularCustomer)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.IsRegularCustomer)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.PurchaseDate)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.PurchaseDate)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.RespondsToUpselling)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.RespondsToUpselling)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.SatisfactionPercent)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.SatisfactionPercent)
+            </dd>
+        </dl>
+
+        <form asp-action="Delete">
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-default" /> |
+                <a asp-action="Index">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>

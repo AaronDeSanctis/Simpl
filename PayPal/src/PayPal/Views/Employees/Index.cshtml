@@ -1,0 +1,84 @@
+@model IEnumerable<PayPal.Models.PeopleModel.Employee>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+@*<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 250}'>
+    @foreach (var item in Model)
+    {
+        <div class="grid-item blue">
+            <p1>@Html.DisplayNameFor(model => model.FirstName)  :  @Html.DisplayFor(modelItem => item.FirstName)</p1><br>
+            <p1>@Html.DisplayNameFor(model => model.MiddleName)  :  @Html.DisplayFor(modelItem => item.MiddleName)</p1><br>
+            <p1>@Html.DisplayNameFor(model => model.LastName)  :  @Html.DisplayFor(modelItem => item.LastName)</p1><br>
+            <p1>@Html.DisplayNameFor(model => model.Hourly)  :  @Html.DisplayFor(modelItem => item.Hourly)</p1><br>
+            <p1>@Html.DisplayNameFor(model => model.Salary)  :  @Html.DisplayFor(modelItem => item.Salary)</p1><br>
+            <p1>@Html.DisplayNameFor(model => model.Role)  :  @Html.DisplayFor(modelItem => item.Role)</p1><br>
+            <td>
+                <a asp-action="Create">Create</a>
+                <a asp-action="Details" asp-route-id="@item.Id">Read</a>
+                <a asp-action="Edit" asp-route-id="@item.Id">Update</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </div>
+    }
+</div>*@
+<div class="transbox">
+    <h2>Employees</h2>
+
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MiddleName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Hourly)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Salary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Role)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MiddleName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Hourly)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Salary)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Role)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </table>
+</div>

@@ -1,0 +1,43 @@
+@model PayPal.Models.FinanceModel.ActualReport
+
+@{
+    ViewData["Title"] = "Details";
+}
+<div class="transbox">
+    <h2>Details</h2>
+
+    <div>
+        <h4>ActualReport</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Date)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Date)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.EstimatedCustomerAmount)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.EstimatedCustomerAmount)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.IsGain)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.IsGain)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Return)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Return)
+            </dd>
+        </dl>
+    </div>
+    <p>
+        <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+        <a asp-action="Index">Back to List</a>
+    </p>
+</div>
